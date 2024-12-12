@@ -1,0 +1,272 @@
+/*Estilos generles*/
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Open Sans', verdana;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    background: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+.container{
+    width: 85%;
+    margin: 0px auto;
+}
+
+/*cabecera*/
+#main-header{
+    background: white;
+    height: 100px;
+    line-height: 85px;
+}
+#logo{
+    width: 63%;
+    float: left;
+}
+
+#logo h1{
+    font-weight: bold;
+    font-size: 25px;
+    color: #ff8018;
+}
+
+#menu{
+    width: 380px;
+    float: left;
+}
+
+#menu ul li{
+    list-style: none;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#menu ul li a{
+    color: black;
+}
+
+#menu ul li a:hover{
+    color: #ff8018;
+}
+
+/*Slider*/
+
+#slider{
+    height: 300px;
+    background: linear-gradient(45deg, #ffa500, #ff4500, #ff0000);
+}
+
+#slider h2{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    line-height: 290px;
+    text-shadow: 0px 0px 6px black;
+    font-family: 'Pacifico', cursive;
+}
+
+/*Maquetados de servicios*/
+
+.subheader{
+    font-size: 34px;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(251, 49, 78, 0.3);
+}
+
+.service, .video{
+    width: 33%;
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service img{ /* Sirve para cambiar el tamaño de las imagenes */
+    height: 100px; 
+    margin-bottom: 50px;
+}
+
+.service h3{
+    margin-bottom: 30px;
+}
+
+.service p, .video p{
+    color: #444;
+    text-align: justify;
+    display: block;
+    width: 85%;
+    margin: 0px auto;
+}
+
+.video iframe{
+    height: 200px;
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+/*Footer*/
+
+#footer{
+    background: #000000;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+#footer .subheader{
+    color: white;
+}
+
+#networks{
+    display: block;
+    width: 216px;
+    margin: 0px auto;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#networks li{
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 300ms;
+}
+
+#networks li:hover{
+    opacity: 0.8;
+    transform: scale(1.1,1.1);
+}
+
+/*Cabecera*/
+
+@media (max-width: 1225px){
+    .container{
+        width: 95%;
+    }
+}
+
+@media (max-width:1085px){
+    #main-header{
+        height: 70px;
+        line-height: 65px;
+    }
+}
+
+@media (max-width:999px){
+    #logo{
+        width: 227px;
+        float: none;
+        margin: 0px auto;
+    }
+    #menu{
+        float: none;
+        margin: 0px auto;
+    }
+    /*2. Estilo para el slider de la marquesina*/
+    #slider{
+        overflow: hidden;
+        height: 150px;
+    }
+    #slider h2{
+        font-size: 30px;
+        line-height: 30px;
+        margin-top: 60px;
+    }
+}
+
+/*Mediaa Queries para cambiar el texto de los servicios en un tamaño 780px*/
+
+@media (max-width: 700px){
+    .service, .video{
+        width: 70%;
+        float: none;
+        margin: 0px auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    /* ? yo */
+    .service{
+        width: 70%;
+        text-align: center;
+    }
+    
+    .service img{
+        margin-bottom: 10px;
+        margin-top: 20px;
+        height: 200px;
+        width: 300px;
+    }
+
+
+    .service p, .video p{
+        margin-top: 20px;
+    }
+    .video iframe{
+        width: 80%;
+        height: 200px;
+    }
+}
+
+/*3. texto de la marquesina tamaño 460*/
+
+@media (max-width:460px) {
+    #slider h2{
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width:377px) {
+    #menu{
+        width: 100%;
+        text-align: center;
+    }
+    #menu ul li{
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    /*4. texto de marquesina con tamaño 377*/
+
+    #slider h2{
+        margin-top: 50px;
+    }
+    .service, .video{
+        width: 90%;
+    }
+    .video iframe{
+        width: 80%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 345px) {
+    #main-header{
+        height: auto;
+    }
+
+    #menu ul li{
+        float: none;
+    }
+}
